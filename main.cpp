@@ -12,7 +12,7 @@ void do_tunnel();
 
 void do_echo_tcp_server();
 void do_tcp_tunnel(char* serverport, char* tunnelport);
-void do_echo_tcp_client(char* server_ip, char* file, char* my_ip, char* my_port);
+void do_echo_tcp_client(char* server_ip, char* server_port, char* client_ip, char* client_port, char* file, int mode);
 void do_help() {
     const char* info = "Help Info\n";
     const char* options = "";
@@ -34,7 +34,7 @@ int main(int argc , char** argv) {
         do_echo_tcp_server();
     }
     else if(strcmp(argv[1],"5") == 0) {
-        do_echo_tcp_client(argv[2],argv[3],argv[4],argv[5]);
+        do_echo_tcp_client(argv[2],argv[3],argv[4],argv[5], NULL, 0);
     }
     else if(strcmp(argv[1],"6") == 0) {
         do_tcp_tunnel(argv[2], argv[3]);
