@@ -3,5 +3,5 @@ project(echo_server)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp error_check.cpp unp.h)
+set(SOURCE_FILES main.cpp error_check.cpp unp.h LOG.cpp LOG.h)
 add_executable(echo_server ${SOURCE_FILES})

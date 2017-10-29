@@ -1,5 +1,5 @@
 
-OBJS = main.o error_check.o
+OBJS = main.o error_check.o LOG.o
 HEAD = unp.h
 main: $(OBJS) $(HEAD)
 	g++ -o $@ $(OBJS) -lpthread

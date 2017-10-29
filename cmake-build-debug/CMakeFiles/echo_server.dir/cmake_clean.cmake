@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/echo_server.dir/main.cpp.o"
   "CMakeFiles/echo_server.dir/error_check.cpp.o"
+  "CMakeFiles/echo_server.dir/LOG.cpp.o"
   "echo_server.pdb"
   "echo_server"
 )

@@ -108,7 +108,7 @@ ssize_t Write_nByte(int fd, char* buf, ssize_t nbyte) {
     ssize_t n = write(fd, buf, nbyte);
     int count = 1;
     while(n != nbyte) {
-        fprintf(stderr, "%d time write fd %d nbyte error, need %d byte, write %d byte\n",fd, count, nbyte, n);
+        fprintf(stderr, "%d time write fd %d nbyte error, need %ld byte, write %ld byte\n",fd, count, nbyte, n);
         n += write(fd, buf + n , nbyte - n);
         if(n <= 0)
             return n;

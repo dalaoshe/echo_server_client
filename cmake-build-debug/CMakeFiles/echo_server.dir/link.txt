@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=c++11 -g   CMakeFiles/echo_server.dir/main.cpp.o CMakeFiles/echo_server.dir/error_check.cpp.o  -o echo_server 
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/echo_server.dir/main.cpp.o CMakeFiles/echo_server.dir/error_check.cpp.o CMakeFiles/echo_server.dir/LOG.cpp.o  -o echo_server 
